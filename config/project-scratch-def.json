@@ -1,0 +1,9 @@
+{
+  "orgName": "stewart.anderson company",
+  "edition": "Developer",
+  "hasSampleData": true,
+  "features": [
+    "API",
+    "AuthorApex"
+  ]
+}

@@ -1,0 +1,18 @@
+<!--
+  @description       :
+  @author            : Stewart Anderson
+  @group             :
+  @last modified on  : 07-31-2024
+  @last modified by  : Stewart Anderson
+-->
+<template>
+  <lightning-card title="Account and Contacts Tree Grid">
+    <lightning-tree-grid data={gridData} columns={gridColumns} key-field="id" selected-rows={selectedRowIds}
+      onrowselection={handleRowSelection}>
+    </lightning-tree-grid>
+  </lightning-card>
+  <lightning-card title="Selected Row Details" if:true={selectedRows.length}>
+    <lightning-datatable data={selectedRows} columns={detailColumns} key-field="id" onrowaction={handleRowAction}>
+    </lightning-datatable>
+  </lightning-card>
+</template>
